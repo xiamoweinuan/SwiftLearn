@@ -32,10 +32,10 @@ class ExampleIrregularityContentView: ESTabBarItemContentView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.imageView.backgroundColor = UIColor.init(red: 23/255.0, green: 149/255.0, blue: 158/255.0, alpha: 1.0)
-        self.imageView.layer.borderWidth = 3.0
-        self.imageView.layer.borderColor = UIColor.init(white: 235 / 255.0, alpha: 1.0).cgColor
-        self.imageView.layer.cornerRadius = 35
+//        self.imageView.backgroundColor = UIColor.init(red: 23/255.0, green: 149/255.0, blue: 158/255.0, alpha: 1.0)
+//        self.imageView.layer.borderWidth = 3.0
+//        self.imageView.layer.borderColor = UIColor.init(white: 235 / 255.0, alpha: 1.0).cgColor
+//        self.imageView.layer.cornerRadius = 35
         self.insets = UIEdgeInsets.init(top: -32, left: 0, bottom: 0, right: 0)
         let transform = CGAffineTransform.identity
         self.imageView.transform = transform
@@ -47,6 +47,7 @@ class ExampleIrregularityContentView: ESTabBarItemContentView {
         highlightIconColor = UIColor.init(white: 255.0 / 255.0, alpha: 1.0)
         backdropColor = .clear
         highlightBackdropColor = .clear
+        renderingMode = .alwaysOriginal
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -65,11 +66,11 @@ class ExampleIrregularityContentView: ESTabBarItemContentView {
     }
     
     public override func selectAnimation(animated: Bool, completion: (() -> ())?) {
-        let view = UIView.init(frame: CGRect.init(origin: CGPoint.zero, size: CGSize(width: 2.0, height: 2.0)))
-        view.layer.cornerRadius = 1.0
-        view.layer.opacity = 0.5
-        view.backgroundColor = UIColor.init(red: 10/255.0, green: 66/255.0, blue: 91/255.0, alpha: 1.0)
-        self.addSubview(view)
+//        let view = UIView.init(frame: CGRect.init(origin: CGPoint.zero, size: CGSize(width: 2.0, height: 2.0)))
+//        view.layer.cornerRadius = 1.0
+//        view.layer.opacity = 0.5
+//        view.backgroundColor = UIColor.red
+//        self.addSubview(view)
      
     }
     
@@ -82,20 +83,20 @@ class ExampleIrregularityContentView: ESTabBarItemContentView {
     }
     
     public override func highlightAnimation(animated: Bool, completion: (() -> ())?) {
-        UIView.beginAnimations("small", context: nil)
-        UIView.setAnimationDuration(0.2)
-        let transform = self.imageView.transform.scaledBy(x: 0.8, y: 0.8)
-        self.imageView.transform = transform
-        UIView.commitAnimations()
+//        UIView.beginAnimations("small", context: nil)
+//        UIView.setAnimationDuration(0.2)
+//        let transform = self.imageView.transform.scaledBy(x: 0.8, y: 0.8)
+//        self.imageView.transform = transform
+//        UIView.commitAnimations()
         completion?()
     }
     
     public override func dehighlightAnimation(animated: Bool, completion: (() -> ())?) {
-        UIView.beginAnimations("big", context: nil)
-        UIView.setAnimationDuration(0.2)
-        let transform = CGAffineTransform.identity
-        self.imageView.transform = transform
-        UIView.commitAnimations()
+//        UIView.beginAnimations("big", context: nil)
+//        UIView.setAnimationDuration(0.2)
+//        let transform = CGAffineTransform.identity
+//        self.imageView.transform = transform
+//        UIView.commitAnimations()
         completion?()
     }
  

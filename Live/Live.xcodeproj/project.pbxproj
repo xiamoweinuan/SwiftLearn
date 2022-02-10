@@ -16,6 +16,11 @@
 		3B1DCDF127B4EB54007999DF /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDF027B4EB54007999DF /* ExampleBasicContentView.swift */; };
 		3B1DCDF527B5015A007999DF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDF427B5015A007999DF /* NavigationController.swift */; };
 		3B1DCDF927B5036E007999DF /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDF827B5036E007999DF /* ExampleIrregularityContentView.swift */; };
+		3B1DCDFC27B50E8B007999DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDFB27B50E8B007999DF /* TabBarController.swift */; };
+		3B1DCDFE27B5224E007999DF /* ZJCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDFD27B5224E007999DF /* ZJCommon.swift */; };
+		3B1DCE0027B522BC007999DF /* ZJColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDFF27B522BB007999DF /* ZJColor.swift */; };
+		3B1DCE0227B522C6007999DF /* ZJView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0127B522C6007999DF /* ZJView-Extension.swift */; };
+		3B1DCE0427B5234A007999DF /* ZJFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0327B5234A007999DF /* ZJFont.swift */; };
 		FC3669B412AEC64092028C64 /* Pods_Live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		3B1DCDF027B4EB54007999DF /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
 		3B1DCDF427B5015A007999DF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		3B1DCDF827B5036E007999DF /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
+		3B1DCDFB27B50E8B007999DF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3B1DCDFD27B5224E007999DF /* ZJCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJCommon.swift; sourceTree = "<group>"; };
+		3B1DCDFF27B522BB007999DF /* ZJColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJColor.swift; sourceTree = "<group>"; };
+		3B1DCE0127B522C6007999DF /* ZJView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZJView-Extension.swift"; sourceTree = "<group>"; };
+		3B1DCE0327B5234A007999DF /* ZJFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFont.swift; sourceTree = "<group>"; };
 		64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +184,10 @@
 		3B1DCDE227B4DE4E007999DF /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DCE0127B522C6007999DF /* ZJView-Extension.swift */,
+				3B1DCDFD27B5224E007999DF /* ZJCommon.swift */,
+				3B1DCDFF27B522BB007999DF /* ZJColor.swift */,
+				3B1DCE0327B5234A007999DF /* ZJFont.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -195,12 +209,21 @@
 		3B1DCDE527B4DE7F007999DF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DCDF427B5015A007999DF /* NavigationController.swift */,
+				3B1DCE0627B523D9007999DF /* Tab */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3B1DCE0627B523D9007999DF /* Tab */ = {
+			isa = PBXGroup;
+			children = (
 				3B1DCDF827B5036E007999DF /* ExampleIrregularityContentView.swift */,
 				3B1DCDEE27B4EB1D007999DF /* ExampleBouncesContentView.swift */,
 				3B1DCDF027B4EB54007999DF /* ExampleBasicContentView.swift */,
-				3B1DCDF427B5015A007999DF /* NavigationController.swift */,
+				3B1DCDFB27B50E8B007999DF /* TabBarController.swift */,
 			);
-			path = Base;
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		40B61CC60979D3B350CB93E2 /* Frameworks */ = {
@@ -336,10 +359,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1DCDF927B5036E007999DF /* ExampleIrregularityContentView.swift in Sources */,
+				3B1DCE0027B522BC007999DF /* ZJColor.swift in Sources */,
 				3B1DCDE927B4E60F007999DF /* HomeViewController.swift in Sources */,
 				3B1DCDF527B5015A007999DF /* NavigationController.swift in Sources */,
 				3B1DCDF127B4EB54007999DF /* ExampleBasicContentView.swift in Sources */,
+				3B1DCE0427B5234A007999DF /* ZJFont.swift in Sources */,
+				3B1DCDFC27B50E8B007999DF /* TabBarController.swift in Sources */,
+				3B1DCE0227B522C6007999DF /* ZJView-Extension.swift in Sources */,
 				3B1DCDC327B4BDC5007999DF /* AppDelegate.swift in Sources */,
+				3B1DCDFE27B5224E007999DF /* ZJCommon.swift in Sources */,
 				3B1DCDEF27B4EB1D007999DF /* ExampleBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
