@@ -13,4 +13,5 @@ target 'Live' do
   pod 'MJRefresh'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod "ESTabBarController-swift"
 end
