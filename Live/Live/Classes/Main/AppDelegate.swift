@@ -11,46 +11,60 @@ import ESTabBarController_swift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let tab = self.customIrregularityStyle(delegate: self as? UITabBarControllerDelegate)
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tab
+        self.window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
     //加载底部tabbar样式
-    func customIrregularityStyle(delegate: UITabBarControllerDelegate?) -> ESTabBarController {
+    func customIrregularityStyle(delegate: UITabBarControllerDelegate?) -> NavigationController {
         let tabBarController = ESTabBarController()
+        
+        tabBarController.shouldHijackHandler = {
+            tabbarController, viewController, index in
+            if index == 2 {
+                return true
+            }
+            return false
+        }
+        tabBarController.didHijackHandler = {
+            [weak tabBarController] tabbarController, viewController, index in
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                let alertController = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
+                let takePhotoAction = UIAlertAction(title: "Take a photo", style: .default, handler: nil)
+                alertController.addAction(takePhotoAction)
+                let selectFromAlbumAction = UIAlertAction(title: "Select from album", style: .default, handler: nil)
+                alertController.addAction(selectFromAlbumAction)
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                alertController.addAction(cancelAction)
+                tabBarController?.present(alertController, animated: true, completion: nil)
+            }
+        }
         let v1 = HomeViewController()
         let v2 = HomeViewController()
         let v3 = HomeViewController()
         let v4 = HomeViewController()
         let v5 = HomeViewController()
-        v1.tabBarItem = ESTabBarItem.init(ESTabBarItemContentView(), title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
-        v2.tabBarItem = ESTabBarItem.init(ESTabBarItemContentView(), title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
-        v3.tabBarItem = ESTabBarItem.init(ESTabBarItemContentView(), title: "Photo", image: UIImage(named: "photo"), selectedImage: UIImage(named: "photo_1"))
-        v4.tabBarItem = ESTabBarItem.init(ESTabBarItemContentView(), title: "Favor", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
-        v5.tabBarItem = ESTabBarItem.init(ESTabBarItemContentView(), title: "Me", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
+        v1.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "tab_home1"), selectedImage: UIImage(named: "tab_home2"))
+        v2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "tab_gaunzhu1"), selectedImage: UIImage(named: "tab_gaunzhu2"))
+        v3.tabBarItem = ESTabBarItem.init(ExampleIrregularityContentView(), title: "Home", image: UIImage(named: "photo_verybig"), selectedImage: UIImage(named: "photo_verybig"))
+        v4.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "tab_acti1"), selectedImage: UIImage(named: "tab_acti2"))
+        v5.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "tab_mine1"), selectedImage: UIImage(named: "tab_mine2"))
         
         tabBarController.viewControllers = [v1, v2, v3, v4, v5]
         
-//        let navigationController = ExampleNavigationController.init(rootViewController: tabBarController)
-//        tabBarController.title = "Example"
-        return tabBarController
+        let navigationController = NavigationController.init(rootViewController: tabBarController)
+        tabBarController.title = "Example"
+        return navigationController
     }
 
-    // MARK: UISceneSession Lifecycle
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
 
 
 }
