@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				3B1DCDD827B4DBD8007999DF /* Classes */,
-				3B1DCDDD27B4DC60007999DF /* External */,
 				3B1DCDC427B4BDC5007999DF /* SceneDelegate.swift */,
 				3B1DCDC627B4BDC5007999DF /* ViewController.swift */,
 				3B1DCDD627B4DB17007999DF /* Rescoure */,
@@ -83,21 +82,12 @@
 			path = Rescoure;
 			sourceTree = "<group>";
 		};
-		3B1DCDD727B4DBC7007999DF /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				3B1DCDC227B4BDC5007999DF /* AppDelegate.swift */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
 		3B1DCDD827B4DBD8007999DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3B1DCDD727B4DBC7007999DF /* AppDelegate */,
 				3B1DCDDB27B4DBF1007999DF /* Main */,
-				3B1DCDDC27B4DC4A007999DF /* Network */,
 				3B1DCDDE27B4DCBA007999DF /* Section */,
+				3B1DCDDD27B4DC60007999DF /* External */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -119,6 +109,10 @@
 		3B1DCDDB27B4DBF1007999DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DCDC227B4BDC5007999DF /* AppDelegate.swift */,
+				3B1DCDE227B4DE4E007999DF /* Define */,
+				3B1DCDE127B4DE2E007999DF /* Tool */,
+				3B1DCDDC27B4DC4A007999DF /* Network */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -160,6 +154,44 @@
 			children = (
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		3B1DCDE127B4DE2E007999DF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DCDE527B4DE7F007999DF /* Base */,
+				3B1DCDE427B4DE75007999DF /* Category */,
+				3B1DCDE327B4DE66007999DF /* Extension */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3B1DCDE227B4DE4E007999DF /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		3B1DCDE327B4DE66007999DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3B1DCDE427B4DE75007999DF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3B1DCDE527B4DE7F007999DF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		40B61CC60979D3B350CB93E2 /* Frameworks */ = {
