@@ -21,6 +21,8 @@
 		3B1DCE0027B522BC007999DF /* ZJColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCDFF27B522BB007999DF /* ZJColor.swift */; };
 		3B1DCE0227B522C6007999DF /* ZJView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0127B522C6007999DF /* ZJView-Extension.swift */; };
 		3B1DCE0427B5234A007999DF /* ZJFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0327B5234A007999DF /* ZJFont.swift */; };
+		3B1DCE0827B633AA007999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0727B633AA007999DF /* ViewController.swift */; };
+		3B1DCE0A27B633C7007999DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0927B633C7007999DF /* LoginViewController.swift */; };
 		FC3669B412AEC64092028C64 /* Pods_Live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		3B1DCDFF27B522BB007999DF /* ZJColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJColor.swift; sourceTree = "<group>"; };
 		3B1DCE0127B522C6007999DF /* ZJView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZJView-Extension.swift"; sourceTree = "<group>"; };
 		3B1DCE0327B5234A007999DF /* ZJFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFont.swift; sourceTree = "<group>"; };
+		3B1DCE0727B633AA007999DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B1DCE0927B633C7007999DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,7 @@
 		3B1DCDD927B4DBE2007999DF /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DCE0927B633C7007999DF /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 		3B1DCDE527B4DE7F007999DF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DCE0727B633AA007999DF /* ViewController.swift */,
 				3B1DCDF427B5015A007999DF /* NavigationController.swift */,
 				3B1DCE0627B523D9007999DF /* Tab */,
 			);
@@ -364,10 +370,12 @@
 				3B1DCDF527B5015A007999DF /* NavigationController.swift in Sources */,
 				3B1DCDF127B4EB54007999DF /* ExampleBasicContentView.swift in Sources */,
 				3B1DCE0427B5234A007999DF /* ZJFont.swift in Sources */,
+				3B1DCE0827B633AA007999DF /* ViewController.swift in Sources */,
 				3B1DCDFC27B50E8B007999DF /* TabBarController.swift in Sources */,
 				3B1DCE0227B522C6007999DF /* ZJView-Extension.swift in Sources */,
 				3B1DCDC327B4BDC5007999DF /* AppDelegate.swift in Sources */,
 				3B1DCDFE27B5224E007999DF /* ZJCommon.swift in Sources */,
+				3B1DCE0A27B633C7007999DF /* LoginViewController.swift in Sources */,
 				3B1DCDEF27B4EB1D007999DF /* ExampleBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
