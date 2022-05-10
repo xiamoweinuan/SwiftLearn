@@ -23,6 +23,9 @@
 		3B1DCE0427B5234A007999DF /* ZJFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0327B5234A007999DF /* ZJFont.swift */; };
 		3B1DCE0827B633AA007999DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0727B633AA007999DF /* ViewController.swift */; };
 		3B1DCE0A27B633C7007999DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCE0927B633C7007999DF /* LoginViewController.swift */; };
+		3B58CFC827F1A624008AE739 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58CFC727F1A624008AE739 /* CustomCell.swift */; };
+		3BF33710282A573200E34F83 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BF33712282A573200E34F83 /* Localization.strings */; };
+		3BF33715282A576A00E34F83 /* LocalizationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF33714282A576A00E34F83 /* LocalizationUtil.swift */; };
 		FC3669B412AEC64092028C64 /* Pods_Live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,12 @@
 		3B1DCE0327B5234A007999DF /* ZJFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFont.swift; sourceTree = "<group>"; };
 		3B1DCE0727B633AA007999DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B1DCE0927B633C7007999DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B58CFC727F1A624008AE739 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3BF3370C282A56EC00E34F83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3BF3370D282A56EC00E34F83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3BF33711282A573200E34F83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		3BF33713282A573300E34F83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localization.strings"; sourceTree = "<group>"; };
+		3BF33714282A576A00E34F83 /* LocalizationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUtil.swift; sourceTree = "<group>"; };
 		64AF2B7EEEA046A5696367A5 /* Pods_Live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +105,7 @@
 				3B1DCDCB27B4BDC6007999DF /* Assets.xcassets */,
 				3B1DCDCD27B4BDC6007999DF /* LaunchScreen.storyboard */,
 				3B1DCDD027B4BDC6007999DF /* Info.plist */,
+				3BF33712282A573200E34F83 /* Localization.strings */,
 			);
 			path = Rescoure;
 			sourceTree = "<group>";
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				3B1DCDE827B4E60F007999DF /* HomeViewController.swift */,
+				3B58CFC227F1A58E008AE739 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 				3B1DCDFD27B5224E007999DF /* ZJCommon.swift */,
 				3B1DCDFF27B522BB007999DF /* ZJColor.swift */,
 				3B1DCE0327B5234A007999DF /* ZJFont.swift */,
+				3BF33714282A576A00E34F83 /* LocalizationUtil.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -230,6 +242,14 @@
 				3B1DCDFB27B50E8B007999DF /* TabBarController.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		3B58CFC227F1A58E008AE739 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B58CFC727F1A624008AE739 /* CustomCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		40B61CC60979D3B350CB93E2 /* Frameworks */ = {
@@ -293,6 +313,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3B1DCDB627B4BDC5007999DF;
 			productRefGroup = 3B1DCDC027B4BDC5007999DF /* Products */;
@@ -310,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1DCDCF27B4BDC6007999DF /* LaunchScreen.storyboard in Resources */,
+				3BF33710282A573200E34F83 /* Localization.strings in Resources */,
 				3B1DCDCC27B4BDC6007999DF /* Assets.xcassets in Resources */,
 				3B1DCDCA27B4BDC5007999DF /* Main.storyboard in Resources */,
 			);
@@ -375,7 +397,9 @@
 				3B1DCE0227B522C6007999DF /* ZJView-Extension.swift in Sources */,
 				3B1DCDC327B4BDC5007999DF /* AppDelegate.swift in Sources */,
 				3B1DCDFE27B5224E007999DF /* ZJCommon.swift in Sources */,
+				3BF33715282A576A00E34F83 /* LocalizationUtil.swift in Sources */,
 				3B1DCE0A27B633C7007999DF /* LoginViewController.swift in Sources */,
+				3B58CFC827F1A624008AE739 /* CustomCell.swift in Sources */,
 				3B1DCDEF27B4EB1D007999DF /* ExampleBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +411,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B1DCDC927B4BDC5007999DF /* Base */,
+				3BF3370C282A56EC00E34F83 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -395,8 +420,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B1DCDCE27B4BDC6007999DF /* Base */,
+				3BF3370D282A56EC00E34F83 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BF33712282A573200E34F83 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF33711282A573200E34F83 /* en */,
+				3BF33713282A573300E34F83 /* zh-Hans */,
+			);
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -467,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -524,9 +561,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ALK2RYKYVK;
+				DEVELOPMENT_TEAM = D66DGQB56W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Live/Rescoure/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -534,13 +572,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com.Live;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gaosDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,9 +593,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ALK2RYKYVK;
+				DEVELOPMENT_TEAM = D66DGQB56W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Live/Rescoure/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -563,13 +604,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com.Live;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaos.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gaosDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

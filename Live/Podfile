@@ -7,8 +7,8 @@ target 'Live' do
 
   # Pods for Live
   pod 'JKSwiftExtension'
-  # pod 'RxSwift'
-  # pod 'RxCocoa'
+#   pod 'RxSwift'
+#   pod 'RxCocoa'
   pod 'FDFullscreenPopGesture'
   pod 'MJRefresh'
   pod 'SnapKit'
